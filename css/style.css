@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#marquee {
+  display: inline-flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  display: inline-flex;
+  margin: 10px;
+  height: 100%;
+  animation: scrolling 100s linear infinite;
+}
+
+.marquee-span {
+  display: flex;
+  flex-direction: row-reverse;
+
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(1vw);
+  }
+  100% {
+    transform: translateX(-180vw);
+  }
+}
+
+.img-size {
+  height: 35px;
+  padding-right: 10px;
+}
